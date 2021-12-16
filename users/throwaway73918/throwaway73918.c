@@ -33,6 +33,10 @@ bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
 }
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
+        case LOWER:
+            return 150;
+        case RAISE:
+            return 150;
         default:
             return TAPPING_TERM;
     }
