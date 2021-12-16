@@ -21,7 +21,7 @@
 #define RHOME_1 SFT_T(KC_M)
 #define RHOME_2 GUI_T(KC_COMM)
 #define RHOME_3	CTL_T(KC_DOT)
-#define RHOME_4 ALT_T(KC_SLASH)
+#define RHOME_4 ALT_T(KC_BSLASH)
 
 enum layers{
     _ALPHA = 0,   // default
