@@ -20,11 +20,10 @@
 #define LHOME_4 SFT_T(KC_F)
 
 #define RHOME_0 LT(_LOWER, KC_H)
-#define RHOME_1 SFT_T(KC_M)
-#define RHOME_2 GUI_T(KC_COMM)
-#define RHOME_3	CTL_T(KC_DOT)
-#define RHOME_4 ALT_T(KC_BSLASH)
-
+#define RHOME_1 SFT_T(KC_J)
+#define RHOME_2 GUI_T(KC_K)
+#define RHOME_3	CTL_T(KC_L)
+#define RHOME_4 ALT_T(KC_SCLN)
 enum layers{
     _ALPHA = 0,   // default
     _LOWER,
