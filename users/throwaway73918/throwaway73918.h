@@ -11,6 +11,8 @@
 
 #define RAISE LT(_RAISE, KC_ENT)
 #define LOWER LT(_LOWER, KC_TAB)
+#define SPC_RAISE LT(_RAISE, KC_SPC)
+#define BSPC_LOWER LT(_LOWER, KC_BSPC)
 #define MOUSE TG(_MOUSE)
 
 #define LHOME_0 LT(_RAISE, KC_G)
@@ -47,8 +49,8 @@ typedef enum {
 #define _________________MAINLAYER_R2_________________        RHOME_0,    RHOME_1, RHOME_2, RHOME_3, RHOME_4
 #define _________________MAINLAYER_R3_________________        KC_N,    KC_M, KC_COMM, KC_DOT, KC_BSLASH
 
-#define ____THUMB_L____ LOWER,   KC_SPC
-#define ____THUMB_R____ KC_BSPC, RAISE
+#define ____THUMB_L____ LOWER,   SPC_RAISE
+#define ____THUMB_R____ BSPC_LOWER, RAISE
 
 
 /* Lower layer
