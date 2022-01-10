@@ -22,7 +22,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 layer_state_t layer_state_set_user(layer_state_t state) {
   return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
-} 
+}
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LOWER:
@@ -41,12 +41,32 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return TAPPING_TERM;
     }
 }
+
+bool get_combo_must_hold(uint16_t index, combo_t *combo) {
+    // Same as above, decide by keycode, the combo index, or by the keys in the chord.
+
+    if (KEYCODE_IS_MOD(combo->keycode) ||
+        (combo->keycode >= QK_MOMENTARY && combo->keycode <= QK_MOMENTARY_MAX) // MO(kc) keycodes
+        ) {
+        return true;
+    }
+
+    switch (index) {
+        case eresc:
+            return true;
+        case caps:
+            return true;
+    }
+
+    return false;
+}
+
 /**
  * TODO:
  * Mouse keys?
  * Game layer
  * move <> onto symbol layers?
  * replace < > with '"
- * replace q ? 
+ * replace q ?
  */
 

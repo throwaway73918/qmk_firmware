@@ -1,6 +1,6 @@
 COMB(eresc,     KC_ESC,         KC_E,    KC_R)
 COMB(caps,      KC_CAPS,        KC_I, KC_O)
-COMB(squote,    KC_QUOT,        KC_L,  KC_K)
-COMB(fslash,    KC_SLSH,        LHOME_2, LHOME_3)
+COMB(squote,    KC_QUOT,        KC_L,  KC_K, KC_SCOLON)
+COMB(fslash,    KC_SLSH,        LHOME_1, LHOME_2, LHOME_3)
 COMB(enter,     KC_ENT,         KC_J,    KC_K)
 COMB(tab,       KC_TAB,         LHOME_3,    LHOME_4)
